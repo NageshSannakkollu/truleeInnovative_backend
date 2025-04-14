@@ -13,7 +13,7 @@ const registerCandidate = async(req,res) => {
         qualification:qualification,
         skills:skillSet
     }
-    // console.log("checkUserEmail:",userDetails)
+    console.log("checkUserEmail:",userDetails)
     await DbConnection()
     const checkUserEmail = await CandidateModel.findOne({email:userDetails.email})
 
